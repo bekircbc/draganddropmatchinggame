@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Spanish Matching Game</h1>
+    <p>Drag the English phrase over to the matching Spanish phrase</p>
+    <p>Arrastra la frase en inglés hasta la frase en español correspondiente</p>
+
+    <main class="container">
+      <div>
+        <ul class="draggable-list">
+          <li id="e1" draggable="true">What's your name?</li>
+          <li id="e2" draggable="true">Nice to meet you</li>
+          <li id="e3" draggable="true">I'm sorry</li>
+          <li id="e4" draggable="true">What do you do in your free time?</li>
+          <li id="e5" draggable="true">Is something wrong?</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="draggable-list">
+          <li id="s2" draggable="true">Mucho gusto</li>
+          <li id="s5" draggable="true">¿Pasa algo?</li>
+          <li id="s1" draggable="true">¿Cómo te llamas?</li>
+          <li id="s3" draggable="true">Lo siento</li>
+          <li id="s4" draggable="true">¿Qué haces en tu tiempo libre?</li>
+        </ul>
+      </div>
+    </main>
+
+    <div id="endMessage">
+      <h3>Well done!</h3>
+      <h3>¡Bien hecho!</h3>
+      <table>
+        <tr>
+          <th>English</th>
+          <th>Spanish</th>
+        </tr>
+        <tr>
+          <td>What’s your name?</td>
+          <td>¿Cómo te llamas?</td>
+        </tr>
+        <tr>
+          <td>Nice to meet you</td>
+          <td>Mucho gusto</td>
+        </tr>
+        <tr>
+          <td>I'm sorry</td>
+          <td>Lo siento</td>
+        </tr>
+        <tr>
+          <td>What do you do in your free time?</td>
+          <td>¿Qué haces en tu tiempo libre?</td>
+        </tr>
+        <tr>
+          <td>Is something wrong?</td>
+          <td>¿Pasa algo?</td>
+        </tr>
+      </table>
+
+      <button onclick="playAgain()">Play Again</button>
+    </div>
+  </body>
+</html>
